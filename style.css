@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; 
+}
+
+  /* First page */
+header,section {
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(to bottom, #dd2476,#ff512f);
+}
+
+.nav-link, .sub-nav-link {
+    font-size: 0.9 rem;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 170px;
+    box-shadow: 0px 2px 15px 0px ,rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+    background: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.wallpaper-image {
+    width: 95%;
+    height: 35rem;
+    box-shadow: 10px 10px wheat;
+}
+
+header .nav-item:last-child {
+    padding-right: 10rem;
+}
+
+header .nav-item {
+    padding: 0.9rem;
+}
+
+header .navbar-brand {
+    padding-left: 8rem;
+}
+
+header .nav-link:hover {
+    color: black;
+}
+
+.right-section-header {
+    color: aliceblue;
+    padding: 135px 95px;
+}
+
+.left-section-header {
+    padding: 35px 50px;
+}
+
+.heading-name {
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.content-heading {
+    font-size: 2.6rem;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+.content-paragraph {
+    letter-spacing: 2px;
+    padding: 5px;
+}
+
+.buy-button {
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* Second Page */
+.section-one{
+    padding: 7vmin 0;
+}
+
+.second-page-pic {
+    width: 100%;
+    opacity: 0.8;
+    border-radius: 7px;
+   
+}
+
+.second-page-right-sec {
+    position: relative;
+}
+
+.panel{
+    position: absolute;
+    left: -130px;
+    background: antiquewhite;
+    top: 70px;
+    border-radius: 7px;
+    letter-spacing: 2px;
+    padding: 14px 50px;
+    text-align: left;
+    box-shadow: 10px 10px;
+}
+
+.cover {
+    width: 100%;
+    height: 55vmin;
+    background: url(pic/istockphoto-1222550815-170667a.jpg);
+    background-position: -24rem -20rem;
+    background-size: 150%;
+    position: relative;
+}
+
+.cover .content {
+    background: rgba(0, 0, 0, 0.7);
+    margin-top: 28px;
+    width: 100%;
+    height: 100%;
+    padding-top: 120px;
+}
+
+.cover .content h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: antiquewhite;
+}
+
+.cover .content p {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: antiquewhite;
+}
+
+.numbers .rectangle {
+    position: relative;
+    z-index: 1;
+    background: whitesmoke;
+    height: 16rem;
+    width: 12rem;
+    margin: 1rem;
+    padding-top: 3vmin;
+    border-radius: 5px;
+    box-shadow: 1px 2px 50px 0 rgba(255,0,0,0);
+}
+
+.numbers {
+    margin-top: -100px;
+}
+
+.numbers h1 {
+    font-size: 50px;
+    color: tomato;
+}
+
+.numbers p {
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+/* 
+.purchase {
+    margin-top: 11rem;
+} */
+
+.purchase h1 {
+    padding-top: 15vmin;
+    font-size: 3rem;
+    font-style: italic;
+    letter-spacing: 7px;
+}
+
+.purchase p {
+    font-size: 16px;
+    letter-spacing: 2px;
+    /* padding-bottom: 10vmin; */
+}
+.card--fold::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    background-color: #37A8AD;;
+    width: 60px;
+    height: 60px;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    transform-origin: bottom right;
+    transform: scale(0);
+    transition: transform 0.3s ease-out;
+  }
+  
+.card--fold::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    background-color: #741A52;
+    width: 60px;
+    height: 60px;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+    transform-origin: bottom right;
+    transform: scale(0);
+    transition: transform 0.3s ease-out;
+  }
+  
+.card--fold:hover::before {
+    transform: scale(1);
+  }
+  
+.card--fold:hover::after {
+    transform: scale(1);
+  }
+
+.card-fold {
+    height: 20rem;
+    width: 20%;
+    box-shadow: 7px 7px lightslategrey;
+    background: aliceblue;
+    margin: 3rem;
+}
+
+.section-three h1 {
+    margin-top: 8rem;
+    padding-bottom: 3rem;
+    font-size: 55px;
+    letter-spacing: 11px;
+    color: mediumaquamarine;
+}
+
+.section-three {
+    background: darkblue;
+    width: 100%;
+}
+
+.section-three p {
+    padding-left: 8px;
+    text-align: left;
+    letter-spacing: 1px;
+    color: beige;
+    padding-bottom: 10rem;
+}
+
+.section-three .col-md-6 {
+    padding-bottom: 16vmin;
+}
+
+.platform i, h3 {
+    color: whitesmoke;
+}
+
+.platform .desktop {
+    background: crimson;
+    display: inline-block;
+    border-radius: 20px;
+    margin-left: 23rem;
+    padding: 7px 45px 7px 45px;
+}
+
+.platform .mobile {
+    background: crimson;
+    display: inline-block;
+    margin-right: 23rem;
+    border-radius: 20px;
+    padding: 7px 55px 7px 55px;
+}
+
+.section-four h1 {
+    padding: 2rem;
+    font-size: 4rem;
+    letter-spacing: 5px;
+}
+
+.section-four p {
+    padding: 0rem;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+.team p {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: left;
+    padding: 1rem 0 0 0;
+}
+
+.team img {
+    width: 90%;
+    margin-top: 1em;
+    border-radius: 60px;
+    height: 240px;
+}
+
+.team {
+    padding: 4vmin 4vmin;
+}
+
+.section-four .card {
+    width: 22rem;
+}
+
+.card-text {
+    padding: 0.2rem;
+}
+
+.border-radius {
+    border-radius: 340px;
+    width: 60%;
+}
+
+footer {
+    background: black;
+    overflow-x: hidden;
+    padding: 14vmin 11vmin;
+}
+
+.icon-footer {
+    padding: 10px;
+}
+
+input::placeholder {
+    color: white!important;
+}
+
+footer .icon-section {
+ color: red;
+}
+
+footer .icon-section i {
+    padding: 5px;
+    cursor: pointer;
+}
+
+footer span {
+    color: white;
+}
+
+.slider h5 {
+    text-align: center;
+}
+
+.slider p {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width:768px) {
+    header .navbar-brand {
+        padding-left: 1rem;
+    }
+
+    .right-section-header {
+        color: aliceblue;
+        padding: 0px 50px;
+        text-align: left;
+    }
+
+    .left-section-header {
+        padding: 0px 20px;
+    }
+
+    .wallpaper-image {
+        height: 27rem;
+    }
+
+    .panel {
+        position: initial;
+        width: initial;
+        height: initial;
+    }
+
+    .section-one {
+        padding: 1vmin 0;
+    }
+
+    .cover {
+        background-position: -25vmin -10vmin;
+    }
+
+    .rectangle {
+        width: 10rem!important;
+        height: 10rem!important;
+    }
+
+    .purchase h1 {
+        padding-top: 4vmin;
+        font-size: 2rem;
+    }
+
+    .card-fold {
+        height: 25rem;
+        width: 50%;
+    }
+
+    .section-three h1 {
+        margin-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .section-three p {
+        padding-bottom: 2rem;
+    }
+
+    .section-three .col-md-6 {
+        padding-bottom: 7vmin;
+    }
+
+    .platform .desktop {
+        margin-left: 8rem;
+    }
+
+    .platform .mobile {
+        margin-right: 7rem;
+    }
+
+    .section-four h1 {
+        padding: 1rem;
+        font-size: 3rem;
+        letter-spacing: 2px;
+    }
+
+    .section-four p {
+        font-size: 14px;
+    }
+
+    .section-four .card {
+        width: 14rem;
+    }
+
+@media only screen and (max-width:425px) {
+    .right-section-header {
+        padding: 0px 30px;
+    }
+
+    .heading-name {
+        padding: 2px;
+    }
+
+    .content-heading {
+        font-size: 1.6rem;
+    }
+
+    .wallpaper-image {
+        margin-top: 8px;
+    }
+
+    .panel {
+        margin-top: 10px;
+    }
+
+    .container-fluid.text-center {
+        margin-top: 100px;
+    }
+
+    .desktop.shadow-lg {
+        margin: 0;
+    }
+
+    .mobile.shadow-lg {
+        margin: 0;
+    }
+
+    .owl-stage-outer {
+    margin-left: 79px;
+    }
+
+    @media only screen and (max-width:320px) {
+        .wallpaper-image {
+            height: 200px!important;
+        }
+
+        .card.card--fold.card-fold {
+            height: 21rem;
+            width: 77%;
+        }
+
+        .section-three h1 {
+            margin-top: 2rem;
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+
+}
+
+
